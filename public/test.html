@@ -1,0 +1,21 @@
+
+<html>
+  <head>
+  </head>
+  <body>
+    You URL is:
+    <div id="test"></div>
+
+    <script type="text/javascript">
+    console.log('window.location = ', window.location);
+      window.cloudReturn = window.location;
+
+      if (window.cloudReturn) {
+        console.log('window.cloudReturn.url = ', window.cloudReturn.url);
+      }
+      var fieldNameElement = document.getElementById('test');
+      fieldNameElement.innerHTML = window.location;
+
+    </script>
+  </body>
+</html>
